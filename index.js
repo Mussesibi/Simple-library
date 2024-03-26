@@ -20,6 +20,7 @@ function addBookToList(book) {
 
 function displayForm() {
   form.style.display = "block";
+  form.scrollIntoView({ behavior: "smooth", block: "start" });
   body.addEventListener("mousedown", (event) => {
     if (!form.contains(event.target)) {
       form.style.display = "none";
@@ -55,7 +56,9 @@ function listBooksFromArray() {
       listOfBooks.splice(currentIndex, 1);
       div.remove();
       index--;
+      listBooksFromArray();
     });
+
     readBtn.addEventListener("click", (e) => {
       div.classList.toggle("active");
     });

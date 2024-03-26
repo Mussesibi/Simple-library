@@ -1,0 +1,145 @@
+body {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+h1 {
+    text-align: center;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 5px;
+    height: 100%;
+    background-color: orange;
+}
+
+.card {
+    height: 200px;
+    background-color: white;
+    width: 400px;
+    padding: 20px 20px;
+    position: relative;
+    box-shadow: 5px 0 10px gray;
+    margin-top: 20px;
+
+}
+
+.title,.author,.pages{
+    font-family:  'Arial Narrow Bold', sans-serif;
+}
+
+.title::before{
+    font-family:  'Arial Narrow Bold', sans-serif;
+    content: "Title";
+    padding-right: 20%;
+    font-size: larger;
+    color: gray;
+}
+
+.author::before {
+    font-family:  'Arial Narrow Bold', sans-serif;
+    content: "Author";
+    padding-right: 20%;
+    color: gray;    
+}
+
+.pages::before {
+    font-family:  'Arial Narrow Bold', sans-serif;
+    content: "No of Pages";
+    padding-right: 20%;
+    color: gray;    
+}
+
+.new-bok-btn {
+    padding: 20px 40px;
+    background-color: rgba(72, 165, 241, 0.884);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px gray;
+
+}
+
+
+
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+
+}
+
+.add-book-form {
+    width: 500px;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    border: 2px black dashed;
+    border-radius: 25px;
+}
+
+label {
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input[type="text"] {
+    margin-left: 15px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.h2-form {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn-form {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: rgba(72, 165, 241, 0.884);
+    color: white;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 5px 5px gray;
+}
+
+.btn-form:hover,.new-bok-btn:hover{
+    box-shadow: inset 0 1px 5px gray;
+
+}
+
+
+.del-btn {
+    padding: 5px 15px;
+    background-color: rgb(235, 111, 111);
+}
+
+.active {
+    position: relative;
+    content: "";
+    background-color: green;
+}
+
+.read-btn{
+    padding: 5px 15px;
+    background-color: rgb(128, 246, 167);
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./normalise.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <h1>Books</h1>
+    <div class="container"></div>
+    <button class="new-bok-btn" onclick="displayForm()">Add new book</button>
+    <div class="form">
+      <form action="" method="post" class="add-book-form">
+        <h2 class="h2-form">Add book form</h2>
+        <label for="title"
+          >Enter Book Title<input type="text" id="title"
+        /></label>
+        <label for="author"
+          >Enter Book Author<input type="text" id="author"
+        /></label>
+        <label for="pages"
+          >Enter No Of Pages<input type="text" id="pages"
+        /></label>
+        <button type="submit" class="btn-form">Add book</button>
+      </form>
+    </div>
+  </body>
+</html>
